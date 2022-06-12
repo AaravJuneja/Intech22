@@ -1,5 +1,5 @@
 .topnav {
-    background-color: #333;
+    background-color: rgb(58, 54, 112);
     overflow: hidden;
   }
   
@@ -17,11 +17,6 @@
   .topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
   }
 
   .topnav .icon {
@@ -49,3 +44,134 @@
     text-align: left;
   }
 }  
+
+button {
+  --blue: #1b2afd;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--blue);
+  background: linear-gradient(to right, rgba(27, 61, 253, 0.1)1%, transparent 40%,transparent 60% , rgba(27, 31, 253, 0.1) 100%);
+  color: var(--blue);
+  box-shadow: inset 0 0 10px rgba(27, 38, 253, 0.4), 0 0 9px 3px rgba(38, 27, 253, 0.1);
+  margin-top: 100px;
+  margin-left: 43%;
+ }
+ 
+ button:hover {
+  color: #828aff;
+  box-shadow: inset 0 0 10px rgba(61, 27, 253, 0.6), 0 0 9px 3px rgba(61, 27, 253, 0.2);
+ }
+ 
+ button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(35, 27, 253, 0.1) 40%,rgba(35, 27, 253, 0.1) 60% , transparent 100%);
+ }
+ 
+ button:hover:before {
+  transform: translateX(15em);
+ }
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.button2 {
+  --glow-color: rgb(217, 176, 255);
+  --btn-color: rgb(100, 61, 136);
+  
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+ }
+ 
+ .button2::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ .button2:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 0em 0em var(--glow-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ .button2:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
