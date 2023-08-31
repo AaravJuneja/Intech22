@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/AaravJuneja/Intech22#readme",
   "dependencies": {
-    "mongodb": "^4.7.0"
+    "mongodb": "^4.17.0"
   }
 }
